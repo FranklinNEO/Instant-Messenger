@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/chatting_bg_purecolor_thumb"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="@drawable/maintab_toolbar_bg"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="48.0dip"
+            android:layout_height="48.0dip"
+            android:background="@drawable/top_left_bg" />
+
+        <TextView
+            android:id="@+id/person_id"
+            style="@style/TitleBarText"
+            android:background="@drawable/top_mid_bg_normal"
+            android:paddingLeft="8dip"
+            android:text="登录" />
+
+        <View
+            android:layout_width="48.0dip"
+            android:layout_height="48.0dip"
+            android:background="@drawable/top_right_bg_normal" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/MMBody" >
+
+        <EditText
+            android:id="@+id/et_account"
+            style="@style/MMEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mm_edit_focused"
+            android:hint="请输入用户名" />
+
+        <View style="@style/MMLabelSplit" />
+
+        <EditText
+            android:id="@+id/et_password"
+            style="@style/MMEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mm_edit_focused"
+            android:hint="请输入密码"
+            android:password="true" />
+
+        <View style="@style/MMLabelSplit" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <CheckBox
+                android:id="@+id/remember_user_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="记住用户"
+                android:textColor="@color/mm_hyper_text"
+                android:textSize="@dimen/Small_TextSize" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_weight="1.0" />
+
+
+            <View
+                android:layout_width="10.0dp"
+                android:layout_height="fill_parent" />
+
+            <Button
+                android:id="@+id/btn_login"
+                style="@style/MMLineActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxHeight="80.0dip"
+                android:minHeight="41.0dip"
+                android:text=" 登录 " >
+            </Button>
+        </LinearLayout>
+
+        <View style="@style/MMLabelSplit" />
+
+        <View style="@style/MMLabelSplit" />
+    </LinearLayout>
+
+</LinearLayout>

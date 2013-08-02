@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="result_image_border">#ffffffff</color>
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c000ff00</color>
+    <color name="result_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="viewfinder_frame">#ff000000</color>
+    <color name="viewfinder_laser">#ffff0000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="foreground">#ff29549f</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="white_75_transparent">#c0ffffff</color>
+    <color name="white_50_transparent">#80ffffff</color>
+    <color name="white_40_transparent">#60ffffff</color>
+    <color name="black_75_transparent">#c0000000</color>
+    <color name="black_50_transparent">#80000000</color>
+    <color name="black_60_transparent">#a0000000</color>
+    <color name="black_30_transparent">#60000000</color>
+    <color name="black_20_transparent">#30000000</color>
+    <color name="black_40_transparent">#90000000</color>
+    <color name="black_00_transparent">#00000000</color>
+    <color name="main_bkg_color">#f3f3f3ff</color>
+    <color name="lightgrey">#ff888888</color>
+    <color name="grey">#ff58616d</color>
+    <color name="ConversationVoiceTextColor">#ff339900</color>
+
+</resources>

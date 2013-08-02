@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentPanel"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/voice_rcd_hint_bg"
+    android:orientation="vertical"
+    android:paddingBottom="3.0dip"
+    android:paddingLeft="3.0dip"
+    android:paddingRight="1.0dip"
+    android:paddingTop="9.0dip" >
+
+    <LinearLayout
+        android:id="@+id/contentPanel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingLeft="14.0dip"
+            android:paddingRight="10.0dip"
+            android:paddingTop="2.0dip" >
+
+            <TextView
+                android:id="@+id/message"
+                style="\?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="5.0dip"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/BasicTextSize" />
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonPanel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="54.0dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="2.0dip"
+            android:paddingRight="2.0dip"
+            android:paddingTop="10.0dip" >
+
+            <LinearLayout
+                android:id="@+id/leftSpacer"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:orientation="horizontal" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center"
+                android:layout_weight="1.0"
+                android:background="@drawable/btn_style_alert_dialog_special_normal"
+                android:maxLines="2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/BasicTextSize" />
+
+            <LinearLayout
+                android:id="@+id/rightSpacer"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:orientation="horizontal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="2.0dip"
+            android:paddingRight="2.0dip"
+            android:paddingTop="10.0dip" >
+
+            <LinearLayout
+                android:id="@+id/leftSpacer"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:orientation="horizontal" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:background="@drawable/btn_style_alert_dialog_cancel_normal"
+                android:maxLines="2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/BasicTextSize" />
+
+            <LinearLayout
+                android:id="@+id/rightSpacer"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:orientation="horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

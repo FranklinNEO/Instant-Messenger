@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+      android:background="@drawable/chatting_bg_purecolor_thumb"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:background="@drawable/maintab_toolbar_bg"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="48.0dip"
+            android:layout_height="48.0dip"
+            android:background="@drawable/top_left_bg" />
+
+        <TextView
+            style="@style/TitleBarText"
+            android:background="@drawable/top_mid_bg_normal"
+            android:paddingLeft="8dip"
+            android:text="好友列表" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@drawable/top_right_bg_normal"
+            android:contentDescription="设置"
+            android:onClick="onSettingClick"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:src="@drawable/tab_settings_normal" />
+    </LinearLayout>
+
+    <ExpandableListView
+        android:id="@id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:drawSelectorOnTop="false"
+        android:scrollingCache="false" />
+
+</LinearLayout>
